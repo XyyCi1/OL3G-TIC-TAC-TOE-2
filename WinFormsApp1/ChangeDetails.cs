@@ -46,7 +46,7 @@ namespace WinFormsApp1
 
             var conn = Database.GetConnection();
 
-            // ✅ Load account by Id (stable)
+        
             var account = conn.Table<UserAccount>()
                               .FirstOrDefault(u => u.Id == _accountId);
             if (account == null)
@@ -55,7 +55,7 @@ namespace WinFormsApp1
                 return;
             }
 
-            // Check username uniqueness (exclude current account)
+         
             var existing = conn.Table<UserAccount>()
                                .FirstOrDefault(u => u.Username == newUsername && u.Id != _accountId);
             if (existing != null)
@@ -66,12 +66,11 @@ namespace WinFormsApp1
 
             string oldUsername = account.Username;
 
-            // Update credentials
+     
             account.Username = newUsername;
             account.Password = newPassword;
             conn.Update(account);
 
-            // Optional: keep match history consistent
             var history = conn.Table<MatchRecord>()
                               .Where(m => m.Username == oldUsername)
                               .ToList();

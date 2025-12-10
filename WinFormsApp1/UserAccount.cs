@@ -16,7 +16,7 @@ namespace WinFormsApp1
             [Unique]
             public string Username { get; set; }
 
-            public string Password { get; set; }   // For learning only; in real apps hash this!
+            public string Password { get; set; }   
              public int Wins { get; set; }
 
     }

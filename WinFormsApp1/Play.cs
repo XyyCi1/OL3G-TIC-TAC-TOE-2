@@ -36,7 +36,7 @@ namespace WinFormsApp1
 
         private void SetupBoardArray()
         {
-            // Collect all 9 buttons into an array
+          
             cells = new Button[]
             {
                 button0, button1, button2,
@@ -56,7 +56,7 @@ namespace WinFormsApp1
             {
                 b.Enabled = true;
                 b.Text = "";
-                b.BackgroundImage = null; // clear images
+                b.BackgroundImage = null; 
             }
             roundActive = true;
 
@@ -84,27 +84,27 @@ namespace WinFormsApp1
 
             if (board[idx] != ' ') return;
 
-            // Player move
+         
             board[idx] = playerSymbol;
             btn.BackgroundImage = Properties.Resources.X;
 
-            // Disable all buttons until CPU finishes
+         
             foreach (var b in cells) b.Enabled = false;
 
             if (CheckWin(playerSymbol)) { EndRound(playerSymbol); return; }
             if (IsBoardFull()) { EndRound('D'); return; }
 
-            // CPU delay
+           
             lblStatus.Text = "CPU is thinking...";
-            await Task.Delay(500); // wait 0.5 seconds
+            await Task.Delay(500); 
 
-            // CPU move
+          
             CpuMove();
 
             if (CheckWin(cpuSymbol)) { EndRound(cpuSymbol); return; }
             if (IsBoardFull()) { EndRound('D'); return; }
 
-            // Re-enable only empty buttons if round is still active
+         
             if (roundActive)
             {
                 for (int i = 0; i < cells.Length; i++)
@@ -190,7 +190,7 @@ namespace WinFormsApp1
             if (move >= 0)
             {
                 board[move] = cpuSymbol;
-                cells[move].BackgroundImage = Properties.Resources.O; // show O image
+                cells[move].BackgroundImage = Properties.Resources.O; 
             }
         }
 
@@ -251,30 +251,13 @@ namespace WinFormsApp1
 
 
 
-        private void Play_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblStatus_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void btnNextRound_Click_1(object sender, EventArgs e)
         {
             playerStartsThisRound = !playerStartsThisRound;
             StartNewRound();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

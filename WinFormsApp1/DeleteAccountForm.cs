@@ -48,13 +48,12 @@ namespace WinFormsApp1
                 return;
             }
 
-            // Delete related match records where the user is either the player or opponent (parameterized)
+           
             conn.Execute("DELETE FROM MatchRecord WHERE Username = ? OR Opponent = ?", _username, _username);
 
-            // Delete the user account
             conn.Delete(account);
 
-            // Success
+           
             this.DialogResult = DialogResult.OK;
             Close();
         }

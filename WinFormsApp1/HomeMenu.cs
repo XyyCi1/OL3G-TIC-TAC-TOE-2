@@ -31,10 +31,7 @@ namespace WinFormsApp1
             labelUsername.Text = _username + "!";
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
-
+       
         private void button4_Click(object sender, EventArgs e)
         {
             Play playForm = new Play(_username);
@@ -76,7 +73,7 @@ namespace WinFormsApp1
             }
         }
 
-        // Logout button handler: show login form and close this one
+   
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             var login = new LogInMenu();
@@ -88,17 +85,15 @@ namespace WinFormsApp1
         {
             var conn = Database.GetConnection();
 
-            // ✅ Query by accountId to get latest info
             var account = conn.Table<UserAccount>()
                               .FirstOrDefault(u => u.Id == _accountId);
 
             if (account != null)
             {
-                _username = account.Username;         // update local copy
-                labelUsername.Text = _username + "!";       // update label
+                _username = account.Username;       
+                labelUsername.Text = _username + "!";       
 
-                // Optional: if you show wins or other stats
-                // labelWins.Text = $"Wins: {account.Wins}";
+               
             }
             else
             {

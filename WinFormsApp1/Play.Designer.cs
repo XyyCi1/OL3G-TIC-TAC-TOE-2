@@ -71,7 +71,7 @@
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+      
             // 
             // button2
             // 
@@ -153,7 +153,7 @@
             lblStatus.Size = new Size(44, 16);
             lblStatus.TabIndex = 2;
             lblStatus.Text = "status";
-            lblStatus.Click += lblStatus_Click;
+        
             // 
             // lblPlayerScore
             // 
@@ -187,7 +187,7 @@
             lblDraws.Size = new Size(61, 16);
             lblDraws.TabIndex = 2;
             lblDraws.Text = "Draws: 0";
-            lblDraws.Click += lblStatus_Click;
+       
             // 
             // btnNextRound
             // 
@@ -210,7 +210,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+       
             // 
             // pictureBox2
             // 
@@ -269,7 +269,7 @@
             Controls.Add(pictureBox2);
             Name = "Play";
             Text = "Play";
-            Load += Play_Load;
+       
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

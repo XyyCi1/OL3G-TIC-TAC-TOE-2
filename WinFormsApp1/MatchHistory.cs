@@ -32,7 +32,7 @@ namespace WinFormsApp1
 
             dataGridHistory.DataSource = history;
 
-            // Optional: adjust headers
+       
             dataGridHistory.Columns["Id"].Visible = false;
             dataGridHistory.Columns["Username"].HeaderText = "Player";
             dataGridHistory.Columns["Opponent"].HeaderText = "Opponent";

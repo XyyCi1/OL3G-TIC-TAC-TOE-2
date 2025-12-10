@@ -43,7 +43,7 @@
             // textBoxNewUsername
             // 
             textBoxNewUsername.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBoxNewUsername.Location = new Point(53, 51);
+            textBoxNewUsername.Location = new Point(53, 37);
             textBoxNewUsername.Margin = new Padding(3, 2, 3, 2);
             textBoxNewUsername.Name = "textBoxNewUsername";
             textBoxNewUsername.PlaceholderText = "New Username...";
@@ -53,7 +53,7 @@
             // textBoxNewPassword
             // 
             textBoxNewPassword.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBoxNewPassword.Location = new Point(53, 114);
+            textBoxNewPassword.Location = new Point(53, 99);
             textBoxNewPassword.Margin = new Padding(3, 2, 3, 2);
             textBoxNewPassword.Name = "textBoxNewPassword";
             textBoxNewPassword.PasswordChar = '•';
@@ -95,7 +95,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(53, 97);
+            label2.Location = new Point(53, 82);
             label2.Name = "label2";
             label2.Size = new Size(87, 15);
             label2.TabIndex = 5;
@@ -104,7 +104,7 @@
             // textBoxConfirmPassword
             // 
             textBoxConfirmPassword.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBoxConfirmPassword.Location = new Point(53, 178);
+            textBoxConfirmPassword.Location = new Point(53, 163);
             textBoxConfirmPassword.Margin = new Padding(3, 2, 3, 2);
             textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             textBoxConfirmPassword.PasswordChar = '•';
@@ -115,7 +115,7 @@
             // lblpw
             // 
             lblpw.AutoSize = true;
-            lblpw.Location = new Point(56, 161);
+            lblpw.Location = new Point(56, 146);
             lblpw.Name = "lblpw";
             lblpw.Size = new Size(107, 15);
             lblpw.TabIndex = 5;

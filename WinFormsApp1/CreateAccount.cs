@@ -17,15 +17,7 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonCreate_Click(object sender, EventArgs e)
         {
@@ -61,29 +53,34 @@ namespace WinFormsApp1
             var account = new UserAccount
             {
                 Username = user,
-                Password = pass   // for real apps, store a hash
+                Password = pass   
             };
-            
+
 
             int success = db.Insert(account);
-           
-            
-                if (success > 0)
-                {
-                    // Insert successful
-                    MessageBox.Show("Account created! You can log in now.");
 
-                    LogInMenu login = new LogInMenu();   // go back to login form
-                    login.Show();
-                    this.Close(); // or this.Hide();
-                }
-                else
-                {
-                    // Insert failed
-                    MessageBox.Show("Could not create account. Please try again.");
-                }
-            
-            
+
+            if (success > 0)
+            {
+             
+                MessageBox.Show("Account created! You can log in now.");
+
+                LogInMenu login = new LogInMenu();   
+                login.Show();
+                this.Close(); 
+            }
+            else
+            {
+               
+                MessageBox.Show("Could not create account. Please try again.");
+            }
+
+
+        }
+
+        private void textBoxPass_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,17 +21,16 @@ namespace WinFormsApp1
         {
             var conn = Database.GetConnection();
 
-            // Get all accounts sorted by Wins descending
+       
             var topAccounts = conn.Table<UserAccount>()
                                   .OrderByDescending(u => u.Wins)
                                   .ToList();
 
-            // Bind directly to DataGridView
+        
             dataGridLeaderboard.DataSource = topAccounts;
 
-            // Optional: adjust columns
-            dataGridLeaderboard.Columns["Id"].Visible = false;        // hide internal ID
-            dataGridLeaderboard.Columns["Password"].Visible = false;  // hide password
+            dataGridLeaderboard.Columns["Id"].Visible = false;        
+            dataGridLeaderboard.Columns["Password"].Visible = false;  
             dataGridLeaderboard.Columns["Username"].HeaderText = "Player";
             dataGridLeaderboard.Columns["Wins"].HeaderText = "Wins";
         }

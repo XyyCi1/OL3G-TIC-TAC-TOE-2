@@ -30,16 +30,16 @@ namespace WinFormsApp1
 
             var db = Database.GetConnection();
 
-            // Look for a user with matching username and password
+          
             var account = db.Table<UserAccount>()
                             .FirstOrDefault(u => u.Username == user && u.Password == pass);
 
             if (account != null)
             {
-                // ? Pass both Id and Username into HomeMenu
+              
                 HomeMenu home = new HomeMenu(account.Id, account.Username);
                 home.Show();
-                this.Hide(); // hide login form
+                this.Hide(); 
             }
             else
             {
