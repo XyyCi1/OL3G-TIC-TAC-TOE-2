@@ -71,7 +71,6 @@
             button1.TabIndex = 1;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-      
             // 
             // button2
             // 
@@ -153,7 +152,6 @@
             lblStatus.Size = new Size(44, 16);
             lblStatus.TabIndex = 2;
             lblStatus.Text = "status";
-        
             // 
             // lblPlayerScore
             // 
@@ -187,15 +185,14 @@
             lblDraws.Size = new Size(61, 16);
             lblDraws.TabIndex = 2;
             lblDraws.Text = "Draws: 0";
-       
             // 
             // btnNextRound
             // 
-            btnNextRound.BackColor = SystemColors.ActiveCaption;
-            btnNextRound.FlatStyle = FlatStyle.System;
-            btnNextRound.Location = new Point(305, 112);
+            btnNextRound.BackColor = SystemColors.Control;
+            btnNextRound.FlatStyle = FlatStyle.Popup;
+            btnNextRound.Location = new Point(293, 112);
             btnNextRound.Name = "btnNextRound";
-            btnNextRound.Size = new Size(85, 23);
+            btnNextRound.Size = new Size(86, 23);
             btnNextRound.TabIndex = 3;
             btnNextRound.Text = "Next Round";
             btnNextRound.UseVisualStyleBackColor = false;
@@ -210,7 +207,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-       
             // 
             // pictureBox2
             // 
@@ -269,7 +265,6 @@
             Controls.Add(pictureBox2);
             Name = "Play";
             Text = "Play";
-       
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

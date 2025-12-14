@@ -246,11 +246,6 @@ namespace WinFormsApp1
         }
 
 
-
-
-
-
-
       
         private void btnNextRound_Click_1(object sender, EventArgs e)
         {
