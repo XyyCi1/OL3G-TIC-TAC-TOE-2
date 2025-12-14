@@ -62,6 +62,7 @@
             dataGridLeaderboard.Name = "dataGridLeaderboard";
             dataGridLeaderboard.Size = new Size(373, 337);
             dataGridLeaderboard.TabIndex = 3;
+            dataGridLeaderboard.CellContentClick += dataGridLeaderboard_CellContentClick;
             // 
             // button1
             // 

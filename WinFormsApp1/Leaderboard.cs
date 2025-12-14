@@ -20,24 +20,42 @@ namespace WinFormsApp1
         private void Leaderboard_Load(object sender, EventArgs e)
         {
             var conn = Database.GetConnection();
+            var users = conn.Table<UserAccount>().ToList();
+            var leaderboard = new List<LeadboardWR>();
+
+            foreach (var user in users)
+            {
+                int matchCount = conn.Table<MatchRecord>()
+                                     .Count(m => m.Username == user.Username);
+
+                leaderboard.Add(new LeadboardWR
+                {
+                    Username = user.Username,
+                    Wins = user.Wins,
+                    MatchCount = matchCount
+                });
+            }
 
        
-            var topAccounts = conn.Table<UserAccount>()
-                                  .OrderByDescending(u => u.Wins)
-                                  .ToList();
+            leaderboard = leaderboard.OrderByDescending(e => e.Wins).ToList();
 
-        
-            dataGridLeaderboard.DataSource = topAccounts;
+            dataGridLeaderboard.DataSource = leaderboard;
 
-            dataGridLeaderboard.Columns["Id"].Visible = false;        
-            dataGridLeaderboard.Columns["Password"].Visible = false;  
+
             dataGridLeaderboard.Columns["Username"].HeaderText = "Player";
             dataGridLeaderboard.Columns["Wins"].HeaderText = "Wins";
+            dataGridLeaderboard.Columns["MatchCount"].HeaderText = "Matches";
+            dataGridLeaderboard.Columns["WinRate"].HeaderText = "Win Rate";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void dataGridLeaderboard_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

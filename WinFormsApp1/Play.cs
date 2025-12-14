@@ -197,7 +197,7 @@ namespace WinFormsApp1
         private int ChooseCpuMove()
         {
             Random rnd = new Random();
-            if (rnd.Next(100) < 12)
+            if (rnd.Next(100) < 15)
             {
 
                 var empty = Enumerable.Range(0, 9).Where(i => board[i] == ' ').ToList();

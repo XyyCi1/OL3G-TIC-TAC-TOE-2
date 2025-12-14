@@ -51,6 +51,7 @@
             dataGridHistory.Name = "dataGridHistory";
             dataGridHistory.Size = new Size(478, 329);
             dataGridHistory.TabIndex = 1;
+            dataGridHistory.CellContentClick += dataGridHistory_CellContentClick;
             // 
             // label1
             // 

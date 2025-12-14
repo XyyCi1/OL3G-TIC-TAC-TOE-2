@@ -32,12 +32,17 @@ namespace WinFormsApp1
 
             dataGridHistory.DataSource = history;
 
-       
+
             dataGridHistory.Columns["Id"].Visible = false;
             dataGridHistory.Columns["Username"].HeaderText = "Player";
             dataGridHistory.Columns["Opponent"].HeaderText = "Opponent";
             dataGridHistory.Columns["Result"].HeaderText = "Result";
             dataGridHistory.Columns["DatePlayed"].HeaderText = "Date";
+        }
+
+        private void dataGridHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
