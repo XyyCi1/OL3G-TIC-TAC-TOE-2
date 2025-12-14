@@ -36,6 +36,7 @@ namespace WinFormsApp1
             textBoxPassword = new TextBox();
             button1 = new Button();
             buttonCreateAcc = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -43,7 +44,7 @@ namespace WinFormsApp1
             // pictureBox5
             // 
             pictureBox5.BackColor = SystemColors.ActiveCaption;
-            pictureBox5.Location = new Point(-54, 230);
+            pictureBox5.Location = new Point(-47, 227);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(550, 199);
             pictureBox5.TabIndex = 5;
@@ -62,7 +63,7 @@ namespace WinFormsApp1
             // textBoxUsername
             // 
             textBoxUsername.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBoxUsername.Location = new Point(141, 247);
+            textBoxUsername.Location = new Point(148, 237);
             textBoxUsername.Name = "textBoxUsername";
             textBoxUsername.PlaceholderText = "Username....";
             textBoxUsername.Size = new Size(178, 27);
@@ -72,7 +73,7 @@ namespace WinFormsApp1
             // textBoxPassword
             // 
             textBoxPassword.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBoxPassword.Location = new Point(141, 291);
+            textBoxPassword.Location = new Point(148, 270);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.PasswordChar = '•';
             textBoxPassword.PlaceholderText = "Password...";
@@ -82,7 +83,8 @@ namespace WinFormsApp1
             // 
             // button1
             // 
-            button1.Location = new Point(141, 346);
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Location = new Point(195, 303);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 4;
@@ -92,25 +94,40 @@ namespace WinFormsApp1
             // 
             // buttonCreateAcc
             // 
-            buttonCreateAcc.Location = new Point(254, 346);
+            buttonCreateAcc.BackColor = SystemColors.Control;
+            buttonCreateAcc.BackgroundImageLayout = ImageLayout.Center;
+            buttonCreateAcc.FlatStyle = FlatStyle.Popup;
+            buttonCreateAcc.Location = new Point(174, 357);
             buttonCreateAcc.Name = "buttonCreateAcc";
             buttonCreateAcc.Size = new Size(121, 23);
             buttonCreateAcc.TabIndex = 9;
-            buttonCreateAcc.Text = "CreateAccount";
-            buttonCreateAcc.UseVisualStyleBackColor = true;
+            buttonCreateAcc.Text = "Create Account";
+            buttonCreateAcc.UseVisualStyleBackColor = false;
             buttonCreateAcc.Click += button2_Click_1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.ActiveCaption;
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Location = new Point(164, 339);
+            label1.Name = "label1";
+            label1.Size = new Size(144, 15);
+            label1.TabIndex = 10;
+            label1.Text = "No Account? Create Here:";
             // 
             // LogInMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(479, 399);
+            Controls.Add(label1);
             Controls.Add(buttonCreateAcc);
             Controls.Add(textBoxPassword);
             Controls.Add(textBoxUsername);
-            Controls.Add(pictureBox1);
             Controls.Add(button1);
             Controls.Add(pictureBox5);
+            Controls.Add(pictureBox1);
             Name = "LogInMenu";
             Text = "Form1";
             Load += LogInMenu_Load;
@@ -135,5 +152,6 @@ namespace WinFormsApp1
         private TextBox textBoxPassword;
         private Button button1;
         private Button buttonCreateAcc;
+        private Label label1;
     }
 }

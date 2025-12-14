@@ -50,7 +50,7 @@
             labelUsername.AutoSize = true;
             labelUsername.BackColor = SystemColors.ActiveCaption;
             labelUsername.Font = new Font("Century Gothic", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelUsername.Location = new Point(206, 20);
+            labelUsername.Location = new Point(201, 9);
             labelUsername.Name = "labelUsername";
             labelUsername.Size = new Size(186, 41);
             labelUsername.TabIndex = 0;
@@ -60,7 +60,7 @@
             // button1
             // 
             button1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(212, 248);
+            button1.Location = new Point(20, 146);
             button1.Name = "button1";
             button1.Size = new Size(180, 67);
             button1.TabIndex = 1;
@@ -71,7 +71,7 @@
             // button3
             // 
             button3.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(212, 333);
+            button3.Location = new Point(20, 219);
             button3.Name = "button3";
             button3.Size = new Size(180, 49);
             button3.TabIndex = 3;
@@ -82,7 +82,7 @@
             // button4
             // 
             button4.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(212, 162);
+            button4.Location = new Point(20, 79);
             button4.Name = "button4";
             button4.Size = new Size(180, 61);
             button4.TabIndex = 4;
@@ -96,7 +96,7 @@
             pictureBox1.Dock = DockStyle.Top;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(628, 107);
+            pictureBox1.Size = new Size(421, 61);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -104,19 +104,19 @@
             // 
             pictureBox2.BackColor = SystemColors.ActiveCaption;
             pictureBox2.Dock = DockStyle.Bottom;
-            pictureBox2.Location = new Point(0, 466);
+            pictureBox2.Location = new Point(0, 281);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(628, 94);
+            pictureBox2.Size = new Size(421, 94);
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
             // 
             // pictureBox6
             // 
-            pictureBox6.BackColor = SystemColors.ActiveCaption;
+            pictureBox6.BackColor = SystemColors.Control;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(497, 0);
+            pictureBox6.Location = new Point(223, 91);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(120, 96);
+            pictureBox6.Size = new Size(186, 165);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 10;
             pictureBox6.TabStop = false;
@@ -126,7 +126,7 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ActiveCaption;
             label1.Font = new Font("Century Gothic", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 20);
+            label1.Location = new Point(20, 9);
             label1.Name = "label1";
             label1.Size = new Size(188, 41);
             label1.TabIndex = 0;
@@ -138,9 +138,10 @@
             button2.BackColor = Color.Red;
             button2.BackgroundImageLayout = ImageLayout.None;
             button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.ControlText;
-            button2.Location = new Point(507, 524);
+            button2.Location = new Point(299, 343);
             button2.Name = "button2";
             button2.Size = new Size(110, 24);
             button2.TabIndex = 11;
@@ -151,8 +152,9 @@
             // 
             // ButtonChange
             // 
+            ButtonChange.FlatStyle = FlatStyle.Popup;
             ButtonChange.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ButtonChange.Location = new Point(242, 428);
+            ButtonChange.Location = new Point(285, 314);
             ButtonChange.Name = "ButtonChange";
             ButtonChange.Size = new Size(124, 23);
             ButtonChange.TabIndex = 11;
@@ -162,8 +164,9 @@
             // 
             // buttonLogOut
             // 
+            buttonLogOut.FlatStyle = FlatStyle.Popup;
             buttonLogOut.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonLogOut.Location = new Point(274, 399);
+            buttonLogOut.Location = new Point(350, 285);
             buttonLogOut.Name = "buttonLogOut";
             buttonLogOut.Size = new Size(59, 23);
             buttonLogOut.TabIndex = 12;
@@ -176,7 +179,7 @@
             refreshbtn.BackgroundImage = Properties.Resources.refresh;
             refreshbtn.BackgroundImageLayout = ImageLayout.Zoom;
             refreshbtn.Image = Properties.Resources.refresh;
-            refreshbtn.Location = new Point(581, 428);
+            refreshbtn.Location = new Point(373, 67);
             refreshbtn.Name = "refreshbtn";
             refreshbtn.Size = new Size(36, 30);
             refreshbtn.TabIndex = 13;
@@ -187,7 +190,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(628, 560);
+            ClientSize = new Size(421, 375);
             Controls.Add(refreshbtn);
             Controls.Add(buttonLogOut);
             Controls.Add(ButtonChange);
