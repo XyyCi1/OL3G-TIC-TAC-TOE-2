@@ -153,7 +153,7 @@ namespace WinFormsApp1
             var record = new MatchRecord
             {
                 Username = currentUsername,
-                Opponent = "CPU", // or another player if you extend later
+                Opponent = "CPU", 
                 Result = winner == playerSymbol ? "Win" :
                          winner == cpuSymbol ? "Loss" : "Draw",
                 DatePlayed = DateTime.Now
