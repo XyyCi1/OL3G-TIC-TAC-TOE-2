@@ -14,6 +14,7 @@ namespace WinFormsApp1
         public int Wins { get; set; }
         public int MatchCount { get; set; }
 
+
     
         public double WinRate => MatchCount > 0 ? (double)Wins / MatchCount : 0;
     }
