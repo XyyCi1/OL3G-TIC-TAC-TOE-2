@@ -43,7 +43,7 @@
             pictureBox1.BackColor = SystemColors.ActiveCaption;
             pictureBox1.Location = new Point(25, 37);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(436, 458);
+            pictureBox1.Size = new Size(619, 458);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -51,7 +51,7 @@
             // 
             pictureBox2.Location = new Point(46, 51);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(397, 409);
+            pictureBox2.Size = new Size(579, 409);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
@@ -60,7 +60,7 @@
             dataGridLeaderboard.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridLeaderboard.Location = new Point(57, 107);
             dataGridLeaderboard.Name = "dataGridLeaderboard";
-            dataGridLeaderboard.Size = new Size(373, 337);
+            dataGridLeaderboard.Size = new Size(554, 337);
             dataGridLeaderboard.TabIndex = 3;
             dataGridLeaderboard.CellContentClick += dataGridLeaderboard_CellContentClick;
             // 
@@ -79,7 +79,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(155, 66);
+            label1.Location = new Point(231, 65);
             label1.Name = "label1";
             label1.Size = new Size(179, 28);
             label1.TabIndex = 5;
@@ -89,7 +89,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(488, 524);
+            ClientSize = new Size(671, 524);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(dataGridLeaderboard);

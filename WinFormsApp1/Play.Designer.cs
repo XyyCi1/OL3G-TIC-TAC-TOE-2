@@ -147,7 +147,7 @@
             lblStatus.AutoSize = true;
             lblStatus.BackColor = SystemColors.ActiveCaption;
             lblStatus.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblStatus.Location = new Point(159, 112);
+            lblStatus.Location = new Point(159, 103);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(44, 16);
             lblStatus.TabIndex = 2;

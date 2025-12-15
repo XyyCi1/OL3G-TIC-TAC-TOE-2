@@ -61,8 +61,8 @@ namespace WinFormsApp1
             roundActive = true;
 
             lblStatus.Text = playerStartsThisRound
-                ? "Player starts. Your move."
-                : "CPU starts. Thinking...";
+                ? "Player starts.  \n Your move."
+                : "CPU starts. \n Thinking...";
 
             btnNextRound.Enabled = false;
             if (!playerStartsThisRound)
