@@ -21,6 +21,7 @@ namespace WinFormsApp1
                 _conn = new SQLiteConnection(dbPath);
                 _conn.CreateTable<UserAccount>();
                 _conn.CreateTable<MatchRecord>();
+
             }
 
             return _conn;
